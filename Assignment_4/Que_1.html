@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <style>
+            .error
+            {
+                color: red;
+            }
+        </style>
+    </html>
+    <body>
+        <center>
+            <table>
+                <tr>
+                    <td style="text-align: center;" colspan="5"><h1>CALCULATOR</h1></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Enter Number 1</td>
+                    <td colspan="2">
+                        <input type="text" id="number1">
+                    </td>
+                    <td>
+                        <div id="number1Error" class="error"></div>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="2">Enter Number 2</td>
+                    <td colspan="2">
+                        <input type="text" id="number2">
+                    </td>
+                    <td>
+                        <div id="number2Error" class="error"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">Result</td>
+                    <td colspan="2">
+                        <div id="resultId"></div>
+                    </td>
+                    <td>
+                        <div id="resultErrId" class="error"></div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <input type="button" value="Addition" onclick="Add()">
+                    </td>
+                    <td>
+                        <input type="button" value="Substraction" onclick="Substrct()">
+                    </td>
+                    <td>
+                        <input type="button" value="Multiplication" onclick="Multiply()">
+                    </td>
+                    <td>
+                        <input type="button" value="Division" onclick="Divide()">
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <script src="calci.js"></script>
+    </body>
+</head>
