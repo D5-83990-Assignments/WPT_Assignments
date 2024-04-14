@@ -1,0 +1,221 @@
+<html>
+    <head>
+        <title>E-Commerce App</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <script src="jquery-3.7.1.min.js"></script>
+        <script src="bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <nav class="navbar bg-body-tertiary">
+                  <a class="navbar-brand" href="#">
+                    <img src="bootstrap-logo-shadow.png" alt="Bootstrap" width="30" height="24">
+                  </a>
+                  <div class="mx-auto d-block">
+                    <form class="d-flex justify-content-center"role="search" >
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">
+                          <img src="search.svg" alt="search">
+                        </button>
+                    </form>
+                  </div>
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn border me-md-2" type="button">
+                      <img src="person-fill.svg" alt="SignIn"> Sign-in</button>
+                    <button class="btn border" type="button">
+                      <img src="heart-fill.svg" alt="wishlist"> Wishlist</button>
+                    <button class="btn border" type="button">
+                      <img src="cart-fill.svg" alt="Cart"> My Cart</button>
+                  </div>
+              </nav>
+        </div>
+
+        <div class="text-bg-primary p-3">
+        <h1>Men's Wear</h1>
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">Home</li>
+            <li class="breadcrumb-item" aria-current="page">Library</li>
+            <li class="breadcrumb-item" aria-current="page">Data</li>
+          </ol>
+        </nav>
+        </div>
+
+        <div class="col-3 p-3">
+
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                  Related Items
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                  <div class="accordion-body">
+                    <h6>Electronics</h6>
+                    <h6>Home items</h6>
+                    <h6>Books, Magazine</h6>
+                    <h6>Men's clothing</h6>
+                    <h6>Interior items</h6>
+                    <h6>Underwears</h6>
+                    <h6>Shoes for men</h6>
+                    <h6>Accessories</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                  Brands
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Mercedes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Toyota
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Mitsubishi
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Nissan
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Honda
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Suzuki
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                  Price
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <input type="range" class="form-range" id="customRange1">
+                </div>
+                <div class="row justify-content-around">
+                  <div class="col-4">
+                    <label>Min</label>
+                    <input type="number" class="form-control" >
+                  </div>
+                  <div class="col-4">
+                    <label>Max</label>
+                    <input type="number" class="form-control" >
+                  </div>
+                </div>
+                <br>
+                <div class="d-grid gap-2">
+                  <button class="btn border" type="button">Apply</button>
+                </div>
+                <br>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                  Size
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <button type="button" class="btn btn-secondary col-3 m-2">XS</button>
+                  <button type="button" class="btn btn-secondary col-3 m-2">SM</button>
+                  <button type="button" class="btn btn-secondary col-3 m-2">LG</button>
+                  <button type="button" class="btn btn-secondary col-3 m-2">XXL</button>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                  Ratings
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <div>
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star-fill.svg" alt="star">
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <div>
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star.svg" alt="star">
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <div>
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star.svg" alt="star">
+                        <img src="star.svg" alt="star">
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <div>
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star-fill.svg" alt="star">
+                        <img src="star.svg" alt="star">
+                        <img src="star.svg" alt="star">
+                        <img src="star.svg" alt="star">
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+    </body>
+</html>
